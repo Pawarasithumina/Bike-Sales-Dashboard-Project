@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-label="Animated illustration of the bike sales dashboard layout: top models, revenue trend, category split">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#14323a"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .card { fill: #172033; stroke: #334155; stroke-width: 1.5; }
+      .t { fill: #e2e8f0; font-size: 14px; font-weight: 600; }
+      .s { fill: #94a3b8; font-size: 11px; }
+      .kpi { animation: shine 4s ease-in-out infinite; }
+      .k2{animation-delay:.5s}.k3{animation-delay:1s}.k4{animation-delay:1.5s}
+      .bar { transform-box: fill-box; transform-origin: bottom; animation: grow 6s ease-in-out infinite; }
+      .b2{animation-delay:.25s}.b3{animation-delay:.5s}.b4{animation-delay:.75s}.b5{animation-delay:1s}
+      .draw { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw 6s ease-in-out infinite; }
+      .fade { opacity: 0; animation: fade 6s ease-in-out infinite; }
+      .slice { animation: spin 18s linear infinite; transform-origin: 755px 330px; }
+      @keyframes shine { 0%,100% { opacity: .65; } 50% { opacity: 1; } }
+      @keyframes grow { 0% { transform: scaleY(0); } 35%,85% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+      @keyframes draw { 0% { stroke-dashoffset: 100; } 45%,85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 100; } }
+      @keyframes fade { 0%,25% { opacity: 0; } 50%,85% { opacity: 1; } 100% { opacity: 0; } }
+      @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+  </defs>
+
+  <rect width="900" height="500" rx="18" fill="url(#bg)"/>
+  <text class="t" x="30" y="36" font-size="16">Bike Sales Dashboard</text>
+  <text class="s" x="30" y="53">Illustrative layout of the dashboard sections</text>
+
+  <!-- KPI tiles (labels only) -->
+  <g>
+    <rect class="card" x="30"  y="68" width="195" height="62" rx="10"/>
+    <rect class="card" x="237" y="68" width="195" height="62" rx="10"/>
+    <rect class="card" x="444" y="68" width="195" height="62" rx="10"/>
+    <rect class="card" x="651" y="68" width="219" height="62" rx="10"/>
+    <text class="s" x="46"  y="92">TOTAL REVENUE</text>
+    <text class="s" x="253" y="92">UNITS SOLD</text>
+    <text class="s" x="460" y="92">TOP MODEL</text>
+    <text class="s" x="667" y="92">CATEGORIES</text>
+    <rect class="kpi"    x="46"  y="102" width="90"  height="14" rx="7" fill="#fb923c"/>
+    <rect class="kpi k2" x="253" y="102" width="70"  height="14" rx="7" fill="#2dd4bf"/>
+    <rect class="kpi k3" x="460" y="102" width="110" height="14" rx="7" fill="#fbbf24"/>
+    <rect class="kpi k4" x="667" y="102" width="80"  height="14" rx="7" fill="#fb923c"/>
+  </g>
+
+  <!-- Top-selling models: bar chart -->
+  <rect class="card" x="30" y="146" width="410" height="330" rx="12"/>
+  <text class="t" x="48" y="174">Top-Selling Bike Models</text>
+  <line x1="52" y1="440" x2="420" y2="440" stroke="#475569" stroke-width="1.5"/>
+  <rect class="bar"    x="70"  y="230" width="52" height="210" rx="6" fill="#fb923c"/>
+  <rect class="bar b2" x="140" y="270" width="52" height="170" rx="6" fill="#fbbf24"/>
+  <rect class="bar b3" x="210" y="300" width="52" height="140" rx="6" fill="#2dd4bf"/>
+  <rect class="bar b4" x="280" y="340" width="52" height="100" rx="6" fill="#38bdf8"/>
+  <rect class="bar b5" x="350" y="375" width="52" height="65"  rx="6" fill="#a78bfa"/>
+  <text class="s" x="96"  y="458" text-anchor="middle">Model A</text>
+  <text class="s" x="166" y="458" text-anchor="middle">Model B</text>
+  <text class="s" x="236" y="458" text-anchor="middle">Model C</text>
+  <text class="s" x="306" y="458" text-anchor="middle">Model D</text>
+  <text class="s" x="376" y="458" text-anchor="middle">Model E</text>
+
+  <!-- Sales / revenue trend: line chart -->
+  <rect class="card" x="456" y="146" width="414" height="160" rx="12"/>
+  <text class="t" x="474" y="174">Sales &amp; Revenue Trend</text>
+  <line x1="476" y1="284" x2="850" y2="284" stroke="#475569" stroke-width="1.5"/>
+  <path class="fade" d="M476 270 L520 245 L566 252 L612 220 L658 232 L704 198 L750 210 L796 188 L850 196 L850 284 L476 284 Z" fill="url(#area)"/>
+  <path class="draw" pathLength="100" d="M476 270 L520 245 L566 252 L612 220 L658 232 L704 198 L750 210 L796 188 L850 196"
+        fill="none" stroke="#2dd4bf" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle r="6" fill="#fde68a">
+    <animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;1;1;0" keyTimes="0;0.45;0.85;1" calcMode="linear"
+      path="M476 270 L520 245 L566 252 L612 220 L658 232 L704 198 L750 210 L796 188 L850 196"/>
+  </circle>
+
+  <!-- Category performance: donut -->
+  <rect class="card" x="456" y="318" width="414" height="158" rx="12"/>
+  <text class="t" x="474" y="346">Category Performance</text>
+  <g transform="translate(560,408)">
+    <circle r="42" fill="none" stroke="#243049" stroke-width="16"/>
+    <g transform="rotate(-90)">
+      <circle r="42" fill="none" stroke="#fb923c" stroke-width="16" pathLength="100" stroke-dasharray="0 100">
+        <animate attributeName="stroke-dasharray" values="0 100;45 55;45 55;0 100" keyTimes="0;0.35;0.85;1" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="42" fill="none" stroke="#2dd4bf" stroke-width="16" pathLength="100" stroke-dasharray="0 100" stroke-dashoffset="-45">
+        <animate attributeName="stroke-dasharray" values="0 100;30 70;30 70;0 100" keyTimes="0;0.5;0.85;1" dur="6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="42" fill="none" stroke="#fbbf24" stroke-width="16" pathLength="100" stroke-dasharray="0 100" stroke-dashoffset="-75">
+        <animate attributeName="stroke-dasharray" values="0 100;25 75;25 75;0 100" keyTimes="0;0.65;0.85;1" dur="6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  <g>
+    <rect x="650" y="378" width="12" height="12" rx="3" fill="#fb923c"/><text class="s" x="670" y="389" font-size="12">Category 1</text>
+    <rect x="650" y="404" width="12" height="12" rx="3" fill="#2dd4bf"/><text class="s" x="670" y="415" font-size="12">Category 2</text>
+    <rect x="650" y="430" width="12" height="12" rx="3" fill="#fbbf24"/><text class="s" x="670" y="441" font-size="12">Category 3</text>
+  </g>
+</svg>
