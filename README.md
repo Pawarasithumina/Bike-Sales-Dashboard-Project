@@ -1,6 +1,19 @@
+<div align="center">
+
+<img src="assets/bike-header.svg" alt="Bike Sales Dashboard Project" width="100%"/>
+
+<p>
+  <img alt="Excel" src="https://img.shields.io/badge/Microsoft%20Excel-Dashboard-217346?logo=microsoftexcel&logoColor=white"/>
+  <img alt="Pivot Tables" src="https://img.shields.io/badge/Pivot%20Tables-Analysis-fb923c"/>
+  <img alt="Data Cleaning" src="https://img.shields.io/badge/Data%20Cleaning-Prepared-2dd4bf"/>
+  <img alt="Status" src="https://img.shields.io/badge/status-completed-a78bfa"/>
+</p>
+
+</div>
+
 # Bike Sales Dashboard Project
 
-##  Project Overview
+## Project Overview
 
 **Bike Sales Dashboard Project** is an Excel-based data analytics and business intelligence project developed to analyze bike sales performance using structured sales data.
 
@@ -12,7 +25,7 @@ The project demonstrates how Microsoft Excel can be used to transform raw sales 
 
 ---
 
-##  Project Objectives
+## Project Objectives
 
 The main objectives of this project were to:
 
@@ -28,7 +41,7 @@ The main objectives of this project were to:
 
 ---
 
-##  Data Preparation
+## Data Preparation
 
 The project begins with the preparation of the raw bike sales dataset.
 
@@ -45,38 +58,19 @@ The cleaned dataset is then used to create Pivot Tables and dashboard visualizat
 
 ---
 
-##  Data Analysis Workflow
+## Data Analysis Workflow
 
-The project follows the following workflow:
-
-```text
-Raw Bike Sales Data
-        │
-        ▼
-Data Cleaning
-        │
-        ▼
-Data Organization
-        │
-        ▼
-Cleaned Dataset
-        │
-        ▼
-Pivot Tables
-        │
-        ▼
-Charts & Visualizations
-        │
-        ▼
-Interactive Dashboard
-        │
-        ▼
-Sales Insights
-```
+<p align="center">
+  <img src="assets/bike-workflow.svg" alt="Data analysis workflow" width="100%"/>
+</p>
 
 ---
 
-##  Dashboard Overview
+## Dashboard Overview
+
+<p align="center">
+  <img src="assets/bike-dashboard.svg" alt="Dashboard overview" width="100%"/>
+</p>
 
 The final dashboard provides an interactive summary of the bike sales dataset.
 
@@ -112,21 +106,21 @@ Users can interact with the available filters and visualizations to explore spec
 
 ---
 
-##  Key Analysis Areas
+## Key Analysis Areas
 
 The project focuses on several important sales dimensions:
 
-*  Bike model performance
-*  Revenue
-*  Sales volume
-*  Sales trends
-*  Product categories
-*  Overall sales performance
-*  Top-selling products
+* Bike model performance
+* Revenue
+* Sales volume
+* Sales trends
+* Product categories
+* Overall sales performance
+* Top-selling products
 
 ---
 
-##  Pivot Table Analysis
+## Pivot Table Analysis
 
 Pivot Tables were used to summarize the cleaned dataset and generate the calculations required for the dashboard.
 
@@ -144,7 +138,7 @@ The summarized results were then connected to charts and dashboard elements.
 
 ---
 
-##  Dashboard Features
+## Dashboard Features
 
 The Excel dashboard includes:
 
@@ -159,7 +153,7 @@ The Excel dashboard includes:
 
 ---
 
-##  Tools & Technologies
+## Tools & Technologies
 
 | Tool / Technology   | Purpose                                            |
 | ------------------- | -------------------------------------------------- |
@@ -171,7 +165,7 @@ The Excel dashboard includes:
 
 ---
 
-##  Analysis Questions
+## Analysis Questions
 
 The dashboard can be used to explore questions such as:
 
@@ -184,7 +178,7 @@ The dashboard can be used to explore questions such as:
 
 ---
 
-##  Project Purpose
+## Project Purpose
 
 The main purpose of this project is to demonstrate how **Excel-based data analytics and visualization techniques** can be applied to a real-world sales dataset.
 
@@ -196,7 +190,7 @@ This demonstrates how raw sales data can be transformed into an interactive dash
 
 ---
 
-##  Skills Demonstrated
+## Skills Demonstrated
 
 Through this project, I gained practical experience in:
 
@@ -217,11 +211,12 @@ Through this project, I gained practical experience in:
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```text
 Bike-Sales-Dashboard-Project/
 │
+├── assets/
 ├── Raw Data
 │
 ├── Cleaned Data
@@ -233,15 +228,10 @@ Bike-Sales-Dashboard-Project/
 └── README.md
 ```
 
-> **Note:** Update the folder/file names above if the actual structure in your repository is different.
-
 ---
 
-##  Project Outcome
+## Project Outcome
 
 The final outcome of the project is an **interactive Bike Sales Dashboard** that transforms raw sales records into a structured and visual representation of business performance.
 
 The dashboard combines cleaned data, Pivot Tables, charts, and key sales metrics to provide a convenient way to explore bike sales and revenue patterns.
-
----
-
